@@ -1,0 +1,153 @@
+.scoreContainer{
+    width: 45vw;
+    height: 100vh;
+    background-color: black;
+}
+.messsageElement{
+    width: 100%;
+    height:7%;
+    margin: 5vh auto 0 auto;
+    color: white;
+    font-size: 1.4em;
+    background-color: #ff5e6c;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.counterElement{
+    width: 100%;
+    height:7%;
+    margin: 0 auto 0 auto;
+    color: white;
+    font-size: 1.4em;
+    background-color: #ff5e6c;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.sunkShips{
+    font-size: 1.2em;
+    height: 74%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.picture{
+    width: 10vh;
+    height: 10vh
+}
+.imgContainer{
+color: white;
+width: 10vw;
+height: 10vh;
+align-items: center;
+display: flex;
+padding: 10%;
+justify-content: center;
+margin: 3vh 5vw 0 6vw;
+}
+
+@media (max-width: 767px) and (orientation: portrait) {
+    .scoreContainer{
+        width: 100vw;
+        height: 50vh;
+        background-color: black;
+        }
+        .messsageElement{
+            width: 100vw;
+            height:5vh;
+            margin: 0 auto 0 auto;
+            color: white;
+            font-size: 0.7em;
+            background-color: #ff5e6c;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        .counterElement{
+            width: 100vw;
+            height:5vh;
+            margin: 0 auto 0 auto;
+            color: white;
+            font-size: 0.7em;
+            background-color: #ff5e6c;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .sunkShips{
+            font-size: 1em;
+            height: 40vh;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+        }
+        .picture{
+            width: 10vh;
+            height: 10vh
+        }
+        .imgContainer{
+            width: 5vh;
+            height: 5vh;
+        color: white;
+        align-items: center;
+        display: flex;
+        padding: 10%;
+        justify-content: center;
+        }
+}
+@media (max-height: 500px) and (orientation: landscape) {
+    .scoreContainer{
+        width: 45vw;
+        height: 90vh;
+        background-color: black;
+    }
+    .messsageElement{
+        width: 40vw;
+        height:10vh;
+        margin: 0 auto 0 auto;
+        color: white;
+        font-size: 0.9em;
+        background-color: #ff5e6c;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .counterElement{
+        width: 40vw;
+        height:10vh;
+        margin: 0 auto 0 auto;
+        color: white;
+        font-size: 0.9em;
+        background-color: #ff5e6c;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .sunkShips{
+        font-size: 0.9em;
+        height: 70vh;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .picture{
+            width: 10vh;
+            height: 10vh
+    }
+    .imgContainer{
+    color: white;
+    width: 10vw;
+    height: 10vh;
+    align-items: center;
+    display: flex;
+    padding: 10%;
+    justify-content: center;
+    margin: 3vh 5vw 0 6vw;
+    }
+}
+
+
+

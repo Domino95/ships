@@ -1,0 +1,146 @@
+.map{
+    width: 55vw;
+    margin-top: 5vh;
+    opacity: 1;
+}
+.numbers{
+display: block;
+background-color: #2d545e;
+font-size: 1.4em;
+color: white;
+}
+.letters{
+    display: flex;
+    font-size: 1.4em;
+    background-color: #2d545e;
+    color: white;
+    }
+.field{
+    height: 8vh;
+    width:5vw;
+    border: 1px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.board{
+    height: 8vh;
+    width:5vw;
+}
+.fields{
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #fff5d7;
+    cursor: pointer;
+}
+.so{
+    display: flex;
+}
+.waterField{
+     height: 100%;
+      width: 100%;
+       border: 1px solid black;
+       display: flex;
+       justify-content: center;
+       align-items: center;
+}
+.waterPicture{
+    animation: 0.5s show both;
+    width: 90%;
+    height: 90%;
+}
+.hitField{
+    height: 100%;
+    width: 100%;
+     border: 1px solid black;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+}
+.hitPicture{
+    width: 100%;
+    height: 100%;
+    animation: 0.5s show both;
+}
+.empty{
+    overflow: hidden;
+    background-color: #ff5e6c;
+    width: 100%;
+    height: 100%;
+}
+
+@media (max-width: 767px) and (orientation: portrait) {
+    .map{
+        width: 100vw;
+        height: 50vh;
+        margin: 0 auto 0 auto;
+        opacity: 1;
+    }
+    .numbers{
+    display: block;
+    background-color: #2d545e;
+    font-size: 0.7em;
+    color: white;
+    }
+
+    .letters{
+        display: flex;
+        font-size: 0.7em;
+        background-color: #2d545e;
+        color: white;
+        }
+
+    .field{
+        height:calc(50vh/7);
+        width:calc(100vw / 7);
+        border: 1px solid black;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .board{
+        height: calc(50vh/7);
+        width: calc(100vw/ 7);
+    }
+}
+@media (max-height: 500px) and (orientation: landscape) {
+    .map{
+        margin-top: 5vh;
+        width: 60vw;
+        height: 90vh;
+        margin: 0 auto 0 auto;
+        opacity: 1;
+    }
+    .numbers{
+        display: block;
+        background-color: #2d545e;
+        font-size: 0.7em;
+        color: white;
+        }
+    
+        .letters{
+            display: flex;
+            font-size: 0.7em;
+            background-color: #2d545e;
+            color: white;
+            }
+    
+        .field{
+            height:calc(90vh/7);
+            width:calc(60vw / 7);
+            border: 1px solid black;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .board{
+            height: calc(90vh/7);
+            width: calc(60vw/ 7);
+        }
+}
+
+@keyframes show{
+0%{ opacity: 0; transform: scale(0);}
+80%{ opacity: 1; transform: scale(1.3);}
+100%{ opacity: 1; transform: scale(1); }
+}

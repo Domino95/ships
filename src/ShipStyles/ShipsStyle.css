@@ -1,0 +1,125 @@
+.shipsContainer{
+    width:100vw;
+    height: 100vh;
+    background-color: black;
+    display: flex;
+}
+
+.startWrapper {
+display: block;
+margin:  auto ;
+margin: 25vh auto 0 auto;
+}
+.startButton{
+width:400px;
+height: 50px;
+background-color: #ff5e6c;
+color: white;
+border-radius: 25px;
+margin: 0 auto 0 auto;
+cursor: pointer;
+font-size: 15px;
+font-family: "Comfortaa",sans-serif;
+margin-top: 150px;
+display: flex;
+align-items: center;
+justify-content: center;
+}
+.startPicture{
+    width:570px;
+    height: 200px;
+    background-image: url("startPicture.png");
+}
+.result{
+display: block;
+color: white;
+font-family: 'Montserrat', sans-serif;
+text-align: center;
+letter-spacing: 2px;
+margin: 0 auto 0 auto;
+padding-top: 30vh;
+}
+
+@media (max-width: 767px) and (orientation: portrait) {
+.shipsContainer{
+width:100vw;
+height: 100vh;
+background-color: black;
+display: block;
+}
+.startWrapper {
+display: block;
+margin:  auto ;
+margin: 0 auto 0 auto;
+padding-top: 30vh;
+}
+.startButton{
+width: 60vw;
+height: 5vh;
+background-color: #ff5e6c;
+color: white;
+border-radius: 25px;
+cursor: pointer;
+font-size: 0.8em;
+font-family: "Comfortaa",sans-serif;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+    .startPicture{
+        width:280px;
+        height: 100px;
+        background-image: url("startPictureSmall.png");
+        margin: auto;
+    }
+    .result{
+    display: block;
+    padding-top: 20vh;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    letter-spacing: 2px;
+    }
+}
+@media (max-height: 500px) and (orientation: landscape) {
+    .shipsContainer{
+        width:100vw;
+        height: 100vh;
+        background-color: black;
+        display: flex;
+        padding-top: 5vh;
+        }
+        .startWrapper {
+        display: block;
+        margin:  auto ;
+        margin: 20vh auto 0 auto;
+        }
+        .startButton{
+        width:40vw;
+        height: 7vh;
+        background-color: #ff5e6c;
+        color: white;
+        border-radius: 25px;
+        margin: 0 auto 0 auto;
+        cursor: pointer;
+        font-size: 0.7em;
+        font-family: "Comfortaa",sans-serif;
+        margin-top: 10vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        }
+        .startPicture{
+            width:280px;
+            height: 100px;
+            background-image: url("startPictureSmall.png");
+            margin: auto;
+        }
+        .result{
+        display: block;
+        color: white;
+        font-family: 'Montserrat', sans-serif;
+        text-align: center;
+        letter-spacing: 2px;
+        }
+}
