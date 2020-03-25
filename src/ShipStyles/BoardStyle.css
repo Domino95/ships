@@ -31,7 +31,7 @@ color: white;
     display: flex;
     flex-wrap: wrap;
     background-color: #fff5d7;
-    cursor: pointer;
+    -webkit-tap-highlight-color: transparent;
 }
 .so{
     display: flex;
@@ -69,7 +69,7 @@ color: white;
     height: 100%;
 }
 
-@media (max-width: 767px) and (orientation: portrait) {
+@media (max-width: 1023px) and (orientation: portrait) {
     .map{
         width: 100vw;
         height: 50vh;
@@ -97,6 +97,7 @@ color: white;
         display: flex;
         justify-content: center;
         align-items: center;
+
     }
     .board{
         height: calc(50vh/7);
@@ -141,6 +142,6 @@ color: white;
 
 @keyframes show{
 0%{ opacity: 0; transform: scale(0);}
-80%{ opacity: 1; transform: scale(1.3);}
+80%{ opacity: 1; transform: scale(2); }
 100%{ opacity: 1; transform: scale(1); }
 }

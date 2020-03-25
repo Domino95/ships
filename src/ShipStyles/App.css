@@ -8,6 +8,9 @@ body{
   animation: 2s transitionIn both;
   background:  black;
 }
+
+
+
 @keyframes transitionIn{
   from { 
       opacity:0;

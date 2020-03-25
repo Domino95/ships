@@ -34,7 +34,7 @@ class Ships extends React.Component {
     let ships = this.state.ships
     let letters = this.state.letters
     let numbers = this.state.numbers
-    if (window.innerWidth < 767) {
+    if (window.innerWidth < 1024) {
       ships.splice(0, 1)
       ships.splice(0, 1)
       ships.splice(0, 1)
@@ -45,7 +45,7 @@ class Ships extends React.Component {
   }
 
   generateNewGame = () => {
-    if (window.innerWidth < 767) {
+    if (window.innerWidth < 1024) {
       this.setState({
         startGame: false,
         board: [],
@@ -83,7 +83,7 @@ class Ships extends React.Component {
     let locationShips = []
     let activeShips = []
     let boardSize
-    if (window.innerWidth < 767) boardSize = 6
+    if (window.innerWidth < 1024) boardSize = 6
     else boardSize = 10
 
     for (let i = 1; i <= boardSize; i++) {
@@ -289,13 +289,13 @@ class Ships extends React.Component {
             <div className="sunkShips">  {this.state.ships.map((item, index) =>
               item[2] ?
                 <div className="imgContainer" key={index}>
-                  <h3 style={{ color: "green" }}>   {item[1]}</h3> < img src={shipImg} alt="ship" className="picture" />
+                  <h2 style={{ color: "green" }}>   {item[1]}</h2> < img src={shipImg} alt="ship" className="picture" />
 
                 </div>
                 :
 
                 <div className="imgContainer" key={index}>
-                  <h3> {item[1]}</h3> <img src={shipImg} alt="ship" className="picture" />
+                  <h2> {item[1]}</h2> <img src={shipImg} alt="ship" className="picture" />
                 </div>
             )}
             </div>
