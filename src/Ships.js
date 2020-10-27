@@ -7,6 +7,13 @@ import shipImg from "./ShipStyles/shipImg.png"
 import hit from "./ShipStyles/hits.png"
 import water from "./ShipStyles/water.png"
 
+let vh = window.innerHeight * 0.01;
+document.documentElement.style.setProperty('--vh', `${vh}px`);
+window.onresize = () => {
+  let vh = window.innerHeight * 0.01;
+  document.documentElement.style.setProperty('--vh', `${vh}px`);
+}
+
 class Ships extends React.Component {
 
   state = {

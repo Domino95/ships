@@ -7,8 +7,9 @@
 body{
   animation: 2s transitionIn both;
   background:  black;
+  overflow-y: hidden;
+  overflow-x: hidden;
 }
-
 
 
 @keyframes transitionIn{

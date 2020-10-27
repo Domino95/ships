@@ -1,6 +1,6 @@
 .map{
     width: 55vw;
-    margin-top: 5vh;
+    margin-top:calc(var(--vh, 1vh) * 5);
     opacity: 1;
 }
 .numbers{
@@ -16,7 +16,7 @@ color: white;
     color: white;
     }
 .field{
-    height: 8vh;
+    height: calc(var(--vh, 1vh) * 8);
     width:5vw;
     border: 1px solid black;
     display: flex;
@@ -24,7 +24,7 @@ color: white;
     align-items: center;
 }
 .board{
-    height: 8vh;
+    height: calc(var(--vh, 1vh) * 8);
     width:5vw;
 }
 .fields{
@@ -72,7 +72,7 @@ color: white;
 @media (max-width: 1023px) and (orientation: portrait) {
     .map{
         width: 100vw;
-        height: 50vh;
+        height: calc(var(--vh, 1vh) * 50);
         margin: 0 auto 0 auto;
         opacity: 1;
     }
@@ -91,7 +91,7 @@ color: white;
         }
 
     .field{
-        height:calc(50vh/7);
+        height:calc((var(--vh, 1vh) * 50)/7);
         width:calc(100vw / 7);
         border: 1px solid black;
         display: flex;
@@ -100,15 +100,15 @@ color: white;
 
     }
     .board{
-        height: calc(50vh/7);
+        height: calc((var(--vh, 1vh) * 50)/7);
         width: calc(100vw/ 7);
     }
 }
 @media (max-height: 500px) and (orientation: landscape) {
     .map{
-        margin-top: 5vh;
+        margin-top: calc(var(--vh, 1vh) * 5);
         width: 60vw;
-        height: 90vh;
+        height: calc(var(--vh, 1vh) * 90);
         margin: 0 auto 0 auto;
         opacity: 1;
     }
@@ -127,7 +127,7 @@ color: white;
             }
     
         .field{
-            height:calc(90vh/7);
+            height: calc((var(--vh, 1vh) * 90)/7);
             width:calc(60vw / 7);
             border: 1px solid black;
             display: flex;
@@ -135,7 +135,7 @@ color: white;
             align-items: center;
         }
         .board{
-            height: calc(90vh/7);
+            height: calc((var(--vh, 1vh) * 90)/7);
             width: calc(60vw/ 7);
         }
 }

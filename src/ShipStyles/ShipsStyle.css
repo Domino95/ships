@@ -1,6 +1,6 @@
 .shipsContainer{
     width:100vw;
-    height: 100vh;
+    height: calc(var(--vh, 1vh) * 100);
     background-color: black;
     display: flex;
 }
@@ -8,7 +8,7 @@
 .startWrapper {
 display: block;
 margin:  auto ;
-margin: 25vh auto 0 auto;
+margin: calc(var(--vh, 1vh) * 25) auto 0 auto;
 }
 .startButton{
 width:400px;
@@ -37,13 +37,14 @@ font-family: 'Montserrat', sans-serif;
 text-align: center;
 letter-spacing: 2px;
 margin: 0 auto 0 auto;
-padding-top: 30vh;
+padding-top: calc(var(--vh, 1vh) * 30);
+
 }
 
 @media (max-width: 1023px) and (orientation: portrait) {
 .shipsContainer{
 width:100vw;
-height: 100vh;
+height: calc(var(--vh, 1vh) * 100);
 background-color: black;
 display: block;
 }
@@ -51,11 +52,11 @@ display: block;
 display: block;
 margin:  auto ;
 margin: 0 auto 0 auto;
-padding-top: 30vh;
+padding-top: calc(var(--vh, 1vh) * 30);
 }
 .startButton{
 width: 60vw;
-height: 5vh;
+height: calc(var(--vh, 1vh) * 5);
 background-color: #ff5e6c;
 color: white;
 border-radius: 25px;
@@ -84,7 +85,7 @@ align-items: center;
 @media (max-height: 500px) and (orientation: landscape) {
     .shipsContainer{
         width:100vw;
-        height: 100vh;
+        height: calc(var(--vh, 1vh) * 100);
         background-color: black;
         display: flex;
         padding-top: 5vh;
@@ -96,7 +97,7 @@ align-items: center;
         }
         .startButton{
         width:40vw;
-        height: 7vh;
+        height: calc(var(--vh, 1vh) * 7);
         background-color: #ff5e6c;
         color: white;
         border-radius: 25px;
